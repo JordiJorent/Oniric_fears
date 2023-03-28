@@ -20,6 +20,7 @@ public class Linternaswap : MonoBehaviour
             Debug.Log("key pressed");
             if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, raydistance))
             {
+                
                 Debug.Log("Raycast impacted");
                 if (hit.transform.gameObject.tag == "linterna")
                 {
