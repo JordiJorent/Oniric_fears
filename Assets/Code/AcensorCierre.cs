@@ -7,23 +7,32 @@ public class PortasAscensor : MonoBehaviour
 {
     public Animator animator;
     private bool doorsClosed = false;
+    private bool doorsOpen = true;
+    private int activeTriggers = 0; 
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            if (!doorsClosed)
+            activeTriggers++; 
+
+            if (activeTriggers == 5 && doorsOpen)
             {
                 animator.SetTrigger("closeDoors");
-                doorsClosed = true;
+                doorsOpen = false;
                 Invoke("RestartLevel", animator.GetCurrentAnimatorStateInfo(0).length);
             }
-
         }
     }
 
     private void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    private void Start()
+    {
+        animator.SetTrigger("openDoors");
+        doorsOpen = true;
     }
 }
