@@ -32,6 +32,11 @@ public class Interactor : MonoBehaviour
                     hitInfo.transform.gameObject.GetComponent<TeleEncindida>().Interactuar();
                     hitInfo.transform.gameObject.GetComponent<TriggerEvents>().CustomEvent();
                 }
+                else if(hitInfo.transform.gameObject.tag == "door")
+                {
+                    hitInfo.transform.gameObject.GetComponent<Animator>().SetBool("openDoor", true);
+                    hitInfo.transform.gameObject.GetComponent<BoxCollider>().enabled = false;
+                }
                 
             }
         }
@@ -42,7 +47,7 @@ public class Interactor : MonoBehaviour
         Ray r = new Ray(InteractorSource.position, InteractorSource.forward);
         if (Physics.Raycast(r, out RaycastHit hitInfo, InteractRange))
         {
-            if (hitInfo.transform.gameObject.tag == "television" || hitInfo.transform.gameObject.tag=="linterna")
+            if (hitInfo.transform.gameObject.tag == "television" || hitInfo.transform.gameObject.tag=="linterna" || hitInfo.transform.gameObject.tag == "door")
             {
                 Reticle.SetActive(false);
                 InteractReticle.SetActive(true);

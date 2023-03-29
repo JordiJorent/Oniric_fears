@@ -10,4 +10,8 @@ public class Elevator : MonoBehaviour
     {
         animator.SetTrigger("openDoors");
     }
+    private void Update()
+    {
+       
+    }
 }
