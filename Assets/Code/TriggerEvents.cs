@@ -24,9 +24,11 @@ public class TriggerEvents : MonoBehaviour
         {
             case "ApagarLuz":
                 TurnOfLights();
+                tmp.activeTriggers++;
                 break;
             case "EncenderLuz":
                 TurnOnLights();
+                tmp.activeTriggers++;
                 break;
             default:
 
