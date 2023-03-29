@@ -8,31 +8,13 @@ public class AcensorCierre : MonoBehaviour
     public Animator animator;
     private bool doorsClosed = false;
     private bool doorsOpen = true;
-    public int activeTriggers = 0; 
-
-    private void OnTriggerEnter(Collider other)
+    public int activeTriggers = 0;
+    private void Update()
     {
-        if (other.CompareTag("Player"))
-        {
-           
-
-            if (activeTriggers == 5 && doorsOpen)
+            if (activeTriggers == 5)
             {
-                animator.SetTrigger("closeDoors");
-                doorsOpen = false;
-                Invoke("RestartLevel", animator.GetCurrentAnimatorStateInfo(0).length);
+                animator.SetBool("openDoor", true);
+                activeTriggers = 0;
             }
-        }
-    }
-
-    private void RestartLevel()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-
-    private void Start()
-    {
-        animator.SetTrigger("openDoors");
-        doorsOpen = true;
     }
 }
