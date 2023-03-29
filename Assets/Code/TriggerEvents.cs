@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Unity.Burst.Intrinsics.X86.Avx;
 
 public class TriggerEvents : MonoBehaviour
 {
     public GameObject AllLights;
+    public AcensorCierre tmp; 
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,9 @@ public class TriggerEvents : MonoBehaviour
                 TurnOnLights();
                 break;
             default:
+
+                tmp.activeTriggers++;
+                Debug.Log(tmp.activeTriggers);
                 break;
         }
     }
