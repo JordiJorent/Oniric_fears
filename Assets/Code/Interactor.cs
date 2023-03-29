@@ -15,7 +15,8 @@ public class Interactor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Reticle.SetActive(true);
+        InteractReticle.SetActive(false);
     }
 
     // Update is called once per frame
@@ -45,17 +46,21 @@ public class Interactor : MonoBehaviour
             {
                 Reticle.SetActive(false);
                 InteractReticle.SetActive(true);
+                Debug.DrawRay(InteractorSource.position, InteractorSource.forward, Color.green);
             }
             else
             {
                 Reticle.SetActive(true);
                 InteractReticle.SetActive(false);
+                Debug.DrawRay(InteractorSource.position, InteractorSource.forward, Color.red);
+
             }
         }
         else
         {
             Reticle.SetActive(true);
             InteractReticle.SetActive(false);
+            Debug.DrawRay(InteractorSource.position, InteractorSource.forward, Color.red);
         }
     }
 }
