@@ -11,6 +11,7 @@ public class jumpscarestrigger : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             maniqui.SetActive(true);
+            Destroy(this.gameObject);
         }
     }
 
