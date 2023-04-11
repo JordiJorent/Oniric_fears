@@ -45,4 +45,5 @@ public class TriggerEvents : MonoBehaviour
     {
         AllLights.SetActive(true);
     }
+    
 }
