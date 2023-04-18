@@ -7,7 +7,7 @@ public class enemigo : MonoBehaviour
 {
     NavMeshAgent radar;
     public GameObject jugador;
-    float tiempodebusqueda = 10;
+    float tiempodebusqueda = 1;
 
     private void Start()
     {
@@ -19,7 +19,7 @@ public class enemigo : MonoBehaviour
     {
         RaycastHit hit;
         Vector3 direccion = (transform.position - jugador.transform.position).normalized;
-        Debug.DrawRay(transform.position, direccion * 100f, Color.white);
+        Debug.DrawRay(transform.position, direccion * 1000f, Color.white);
         Debug.Log(jugador.transform.position);
         if (Physics.Raycast(transform.position, direccion, out hit))
         {
