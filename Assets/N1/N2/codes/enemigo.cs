@@ -8,12 +8,17 @@ public class enemigo : MonoBehaviour
     NavMeshAgent radar;
     public GameObject jugador;
     float tiempodebusqueda = 1;
+    Animator anim;
+    Transform player;
 
     private void Start()
     {
+        anim = GetComponent<Animator>();
         radar = GetComponent<NavMeshAgent>();
         Recalcular();
         StartCoroutine(Esperaentrecaluclos());
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+
     }
     private void Update()
     {
@@ -32,6 +37,13 @@ public class enemigo : MonoBehaviour
 
         }
 
+
+        if (Vector3.Distance(transform.position,player.position) <= radar.stoppingDistance + 0.5f)
+        {
+            anim.SetBool("matar",true);
+
+
+        }
 
     }
 
