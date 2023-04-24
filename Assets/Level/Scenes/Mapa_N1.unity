@@ -1982,6 +1982,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 196994081}
   activeTriggers: 0
+  AllLights: {fileID: 0}
 --- !u!4 &68373493
 Transform:
   m_ObjectHideFlags: 0
@@ -5236,11 +5237,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: walkSpeed
-      value: 3
+      value: 4.9
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: enableSprint
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384740, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: sprintCooldown
@@ -12647,6 +12648,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 196994081}
   activeTriggers: 0
+  AllLights: {fileID: 0}
 --- !u!1 &699041973 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: db8d5573c72a8074995be8935d303c17, type: 3}
