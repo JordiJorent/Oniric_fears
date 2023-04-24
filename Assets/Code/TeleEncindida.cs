@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class TeleEncindida : MonoBehaviour
@@ -13,7 +14,6 @@ public class TeleEncindida : MonoBehaviour
     {
         luz= GetComponentInChildren<Light>();
         audio= GetComponent<AudioSource>();
-        
     }
     public void Interactuar()
     {

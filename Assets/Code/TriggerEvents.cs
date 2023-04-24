@@ -41,9 +41,9 @@ public class TriggerEvents : MonoBehaviour
     {
         AllLights.SetActive(false);
     }
-    public void TurnOnLights()
-    {
-        AllLights.SetActive(true);
-    }
+    //public void TurnOnLights()
+    //{
+    //    AllLights.SetActive(true);
+    //}
     
 }
