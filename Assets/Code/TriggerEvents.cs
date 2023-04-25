@@ -23,11 +23,11 @@ public class TriggerEvents : MonoBehaviour
         switch (gameObject.name)
         {
             case "ApagarLuz":
-                TurnOfLights();
+               // TurnOfLights();
                 tmp.activeTriggers++;
                 break;
             case "EncenderLuz":
-                TurnOnLights();
+               // TurnOnLights();
                 tmp.activeTriggers++;
                 break;
             default:
@@ -41,9 +41,9 @@ public class TriggerEvents : MonoBehaviour
     {
         AllLights.SetActive(false);
     }
-    public void TurnOnLights()
-    {
-        AllLights.SetActive(true);
-    }
+    //public void TurnOnLights()
+    //{
+    //    AllLights.SetActive(true);
+    //}
     
 }

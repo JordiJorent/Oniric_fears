@@ -9,12 +9,22 @@ public class AcensorCierre : MonoBehaviour
     private bool doorsClosed = false;
     private bool doorsOpen = true;
     public int activeTriggers = 0;
+    public GameObject AllLights;
+
+    public void Start()
+    {
+        AllLights = GameObject.Find("Light");
+    }
     private void Update()
     {
-            if (activeTriggers == 5)
-            {
-                animator.SetBool("openDoor", true);
-                activeTriggers = 0;
-            }
+        if (activeTriggers == 5)
+        {
+           animator.SetBool("openDoor", true);
+           activeTriggers = 0;
+        }
+        else if (activeTriggers == 2)
+        {
+            AllLights.SetActive(false);
+        }
     }
 }
