@@ -5,13 +5,10 @@ public class Linternaswap : MonoBehaviour
     public GameObject flashlight;
     public float raydistance = 200f; 
     public RaycastHit hit;
-    public GameObject texto;
-    private GameObject Player;
     // Start is called before the first frame update
     void Start()
     {
         flashlight.SetActive(false);
-        Player = GameObject.FindGameObjectWithTag("MainCamera");
     }
 
     // Update is called once per frame
@@ -27,10 +24,6 @@ public class Linternaswap : MonoBehaviour
                     flashlight.SetActive(true);
                 }
             }
-        }
-        if (Player!= null)
-        {
-            texto.transform.LookAt(Player.transform.position);
         }
     }
 }
