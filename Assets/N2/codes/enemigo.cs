@@ -19,8 +19,6 @@ public class enemigo : MonoBehaviour
     {
         RaycastHit hit;
         Vector3 direccion = (transform.position - jugador.transform.position).normalized;
-        Debug.DrawRay(transform.position, direccion * 1000f, Color.white);
-        Debug.Log(jugador.transform.position);
         if (Physics.Raycast(transform.position, direccion, out hit))
         {
             if (hit.collider.CompareTag("Player"))
