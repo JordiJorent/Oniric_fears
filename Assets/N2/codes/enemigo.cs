@@ -5,13 +5,13 @@ using UnityEngine.AI;
 
 public class enemigo : MonoBehaviour
 {
-    NavMeshAgent radar;
+    public NavMeshAgent radar;
+    public Animator anim;
     public GameObject jugador;
     float tiempodebusqueda = 1;
 
     private void Start()
     {
-        radar = GetComponent<NavMeshAgent>();
         Recalcular();
         StartCoroutine(Esperaentrecaluclos());
     }
@@ -27,10 +27,15 @@ public class enemigo : MonoBehaviour
 
 
             }
-
+        }
+        if(Vector3.Distance(transform.transform.position, jugador.transform.position) <= radar.stoppingDistance)
+        {
+            // ANIMACION MATAR
+            Debug.Log("He entrat!!");
+            anim.SetBool("m", true);
         }
 
-
+        Debug.Log("Distància: " + Vector3.Distance(transform.position, jugador.transform.position));
     }
 
     void Recalcular()
