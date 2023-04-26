@@ -37,10 +37,10 @@ public class TriggerEvents : MonoBehaviour
                 break;
         }
     }
-    public void TurnOfLights()
-    {
-        AllLights.SetActive(false);
-    }
+    //public void TurnOfLights()
+    //{
+    //    AllLights.SetActive(false);
+    //}
     //public void TurnOnLights()
     //{
     //    AllLights.SetActive(true);
