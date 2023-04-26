@@ -11,6 +11,7 @@ public class TriggerEvents : MonoBehaviour
     void Start()
     {
         AllLights = GameObject.Find("Light");
+        tmp = GameObject.Find("Ascensor Trigger").GetComponent<AcensorCierre>();
     }
 
     // Update is called once per frame
@@ -37,10 +38,10 @@ public class TriggerEvents : MonoBehaviour
                 break;
         }
     }
-    public void TurnOfLights()
-    {
-        AllLights.SetActive(false);
-    }
+    //public void TurnOfLights()
+    //{
+    //    AllLights.SetActive(false);
+    //}
     //public void TurnOnLights()
     //{
     //    AllLights.SetActive(true);
