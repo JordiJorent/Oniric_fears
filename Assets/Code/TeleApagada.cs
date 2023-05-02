@@ -6,6 +6,7 @@ public class TeleApagada : MonoBehaviour
 {
     public TeleEncindida teleencendida;
     public int activeTriggers = 0;
+    public 
 
     void Update()
     {

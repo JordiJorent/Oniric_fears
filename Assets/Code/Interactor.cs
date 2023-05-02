@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Assertions.Must;
 using UnityEngine.UI;
 
 
@@ -37,6 +38,10 @@ public class Interactor : MonoBehaviour
                     hitInfo.transform.gameObject.GetComponent<Animator>().SetBool("openDoor", true);
                     hitInfo.transform.gameObject.GetComponent<BoxCollider>().enabled = false;
                 }
+                else if(hitInfo.transform.gameObject.tag == "radio")
+                {
+                    hitInfo.transform.gameObject.GetComponent<RadioInteractor>().Interactuar();
+                }
                 
             }
         }
@@ -47,7 +52,7 @@ public class Interactor : MonoBehaviour
         Ray r = new Ray(InteractorSource.position, InteractorSource.forward);
         if (Physics.Raycast(r, out RaycastHit hitInfo, InteractRange))
         {
-            if (hitInfo.transform.gameObject.tag == "television" || hitInfo.transform.gameObject.tag=="linterna" || hitInfo.transform.gameObject.tag == "door")
+            if (hitInfo.transform.gameObject.tag == "television" || hitInfo.transform.gameObject.tag=="linterna" || hitInfo.transform.gameObject.tag == "door" || hitInfo.transform.gameObject.tag == "radio")
             {
                 Reticle.SetActive(false);
                 InteractReticle.SetActive(true);
