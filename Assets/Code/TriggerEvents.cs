@@ -23,18 +23,19 @@ public class TriggerEvents : MonoBehaviour
     {
         switch (gameObject.name)
         {
-            case "ApagarLuz":
-               // TurnOfLights();
-                tmp.activeTriggers++;
-                break;
-            case "EncenderLuz":
-               // TurnOnLights();
-                tmp.activeTriggers++;
-                break;
+            //case "ApagarLuz":
+            //   // TurnOfLights();
+            //    tmp.activeTriggers++;
+            //    break;
+            //case "EncenderLuz":
+            //   // TurnOnLights();
+            //    tmp.activeTriggers++;
+            //    break;
             default:
 
                 tmp.activeTriggers++;
-                Debug.Log(tmp.activeTriggers);
+                gameObject.tag = "Untagged";
+                Debug.Log("PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIIIIIIIIIIIIIIIIIIIIIIIIIIIIITTTTTTTTTTTTTTTTTTTT" + tmp.activeTriggers);
                 break;
         }
     }

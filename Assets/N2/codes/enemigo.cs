@@ -34,8 +34,6 @@ public class enemigo : MonoBehaviour
             Debug.Log("He entrat!!");
             anim.SetBool("m", true);
         }
-
-        Debug.Log("Distància: " + Vector3.Distance(transform.position, jugador.transform.position));
     }
 
     void Recalcular()
