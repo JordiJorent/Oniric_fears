@@ -15,8 +15,16 @@ public class RadioInteractor : MonoBehaviour
     // Update is called once per frame
     public void Interactuar()
     {
-        Debug.Log("interactuado con radio");
-        musica.Stop();
+        if (musica.isPlaying)
+        {
+            musica.Pause();
+        }
+        else 
+        {
+            musica.UnPause();  
+        }
+      
+        
         
     }
 }
