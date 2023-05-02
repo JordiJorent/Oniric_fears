@@ -15,6 +15,7 @@ public class AcensorCierre : MonoBehaviour
     public void Start()
     {
         AllLights = GameObject.Find("Light");
+        maniquis = GameObject.Find("maniquis");
     }
     private void Update()
     {
@@ -22,7 +23,7 @@ public class AcensorCierre : MonoBehaviour
         {
            animator.SetBool("openDoor", true);
            activeTriggers = 0;
-            maniquis.SetActive(false);
+           maniquis.SetActive(false);
         }
         else if (activeTriggers == 2)
         {
