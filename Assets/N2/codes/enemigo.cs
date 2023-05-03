@@ -31,7 +31,6 @@ public class enemigo : MonoBehaviour
         if(Vector3.Distance(transform.transform.position, jugador.transform.position) <= radar.stoppingDistance)
         {
             // ANIMACION MATAR
-            Debug.Log("He entrat!!");
             anim.SetBool("m", true);
         }
     }

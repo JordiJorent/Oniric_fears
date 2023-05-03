@@ -3,7 +3,17 @@ guid: ff10371f943ac5647853d812466d4cc9
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - cam: {instanceID: 0}
+  - controller: {instanceID: 0}
+  - emenyHead: {instanceID: 0}
+  - startPosition: {instanceID: 0}
+  - player: {instanceID: 0}
+  - anim: {instanceID: 0}
+  - enemyStartPosition: {instanceID: 0}
+  - enemy: {instanceID: 0}
+  - gritosource: {instanceID: 0}
+  - grito: {fileID: 8300000, guid: 34278e6192aa0ef46a2af68499f98794, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
