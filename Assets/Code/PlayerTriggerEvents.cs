@@ -9,7 +9,7 @@ public class PlayerTriggerEvents : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        FinalTrigger.SetActive(false);
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -21,12 +21,12 @@ public class PlayerTriggerEvents : MonoBehaviour
     {
         if (other.gameObject.name == "Ascensor Trigger")
         {
-            anim.SetBool("openDoor", false);
-            FinalTrigger.SetActive(true);
+            anim.SetBool("DoorHolder", false);
+            
         }
         else if (other.gameObject.name == "FinalTrigger")
         {
-            anim.SetBool("openDoor", false);
+            anim.SetBool("DoorHolder", false);
         }
     }
 }
