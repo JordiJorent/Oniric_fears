@@ -23,7 +23,7 @@ public class AcensorCierre : MonoBehaviour
     {
         if (activeTriggers == 5)
         {
-           animator.SetBool("OpenDoor", true);
+           animator.SetBool("DoorHolder", true);
            activeTriggers = 0;
            maniquis.SetActive(false);
            FinalTrigger.SetActive(true);

@@ -35,7 +35,7 @@ public class Interactor : MonoBehaviour
                 }
                 else if(hitInfo.transform.gameObject.tag == "door")
                 {
-                    hitInfo.transform.gameObject.GetComponent<Animator>().SetBool("openDoor", true);
+                    hitInfo.transform.gameObject.GetComponent<Animator>().SetBool("DoorHolder", true);
                     hitInfo.transform.gameObject.GetComponent<BoxCollider>().enabled = false;
                 }
                 else if(hitInfo.transform.gameObject.tag == "radio")
