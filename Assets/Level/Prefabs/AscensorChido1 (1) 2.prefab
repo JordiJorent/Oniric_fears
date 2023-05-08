@@ -306,37 +306,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.839929, y: 4.7021866, z: 0.693161}
   m_Center: {x: -2.919964, y: -0.48104858, z: -0.1534195}
---- !u!1 &4168356571301600184
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4168356571301600190}
-  m_Layer: 0
-  m_Name: Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4168356571301600190
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4168356571301600184}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 1.3044035, y: 0.36050037, z: 0.81708926}
-  m_LocalScale: {x: 0.7518795, y: 0.7518797, z: 0.7518795}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6474726000298238753}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5949545734158383515
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,7 +338,6 @@ Transform:
   - {fileID: 4168356571244819561}
   - {fileID: 4168356570671161025}
   - {fileID: 4168356569624141195}
-  - {fileID: 4168356571301600190}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
