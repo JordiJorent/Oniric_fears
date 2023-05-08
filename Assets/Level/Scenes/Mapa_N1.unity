@@ -13700,7 +13700,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 15755d1078e147c4ebf63399282d745e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.439813
+      value: 10.308
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 15755d1078e147c4ebf63399282d745e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -38018,7 +38018,7 @@ Transform:
   m_GameObject: {fileID: 1378277601}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 17.9, y: 4.6550446, z: 8.22}
-  m_LocalScale: {x: 1, y: 1, z: 0.57034487}
+  m_LocalScale: {x: 0.94697, y: 0.94697, z: 0.54009944}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -56851,15 +56851,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2004643563}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.057187, y: -12.357235, z: 14.333857}
+  m_LocalRotation: {x: -0, y: 0.6689253, z: -0, w: 0.74332964}
+  m_LocalPosition: {x: 14.6052065, y: -12.357235, z: 13.896833}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4848276259286346}
   m_Father: {fileID: 0}
   m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 83.968, z: 0}
 --- !u!1001 &2005609954
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62670,7 +62670,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1229192157185138}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.173, z: 0.0336}
+  m_LocalPosition: {x: 0.0021, y: 0.1817, z: -0.0018}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -62808,8 +62808,8 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ff650073054ab3145b5c0279ce4b7a42, type: 2}
-  - {fileID: 2100000, guid: ff650073054ab3145b5c0279ce4b7a42, type: 2}
+  - {fileID: 0}
+  - {fileID: 2100000, guid: a52f4487ffa09b44ab766b7c11525890, type: 2}
   - {fileID: 2100000, guid: 174ca498363747e43abe90b2f66d8a6a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -62911,7 +62911,7 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.4433962, g: 0.4433962, b: 0.4433962, a: 1}
+  m_Color: {r: 0.9215687, g: 0.7960785, b: 0.5686275, a: 1}
   m_Intensity: 0.5
   m_Range: 12.12
   m_SpotAngle: 91
@@ -62951,7 +62951,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
@@ -62993,7 +62993,7 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 0.8632076, a: 1}
+  m_Color: {r: 0.92549026, g: 0.8000001, b: 0.5686275, a: 1}
   m_Intensity: 0.75
   m_Range: 6
   m_SpotAngle: 53
@@ -63033,7 +63033,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
@@ -63075,7 +63075,7 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 0.8632076, a: 1}
+  m_Color: {r: 0.9215687, g: 0.7960785, b: 0.5686275, a: 1}
   m_Intensity: 1
   m_Range: 6
   m_SpotAngle: 28
@@ -63115,7 +63115,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 0
@@ -63408,6 +63408,46 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4168356569624141300, guid: 4932ea8e765cb96489e0fd0c3a7175b9, type: 3}
+      propertyPath: m_Size.x
+      value: 3.1371303
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168356569624141300, guid: 4932ea8e765cb96489e0fd0c3a7175b9, type: 3}
+      propertyPath: m_Size.z
+      value: 0.41100597
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168356569624141300, guid: 4932ea8e765cb96489e0fd0c3a7175b9, type: 3}
+      propertyPath: m_Center.x
+      value: 0.49774003
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168356569624141300, guid: 4932ea8e765cb96489e0fd0c3a7175b9, type: 3}
+      propertyPath: m_Center.z
+      value: -0.20553827
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168356571244819560, guid: 4932ea8e765cb96489e0fd0c3a7175b9, type: 3}
+      propertyPath: m_Size.x
+      value: 2.1356692
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168356571244819560, guid: 4932ea8e765cb96489e0fd0c3a7175b9, type: 3}
+      propertyPath: m_Size.y
+      value: 2.553094
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168356571244819560, guid: 4932ea8e765cb96489e0fd0c3a7175b9, type: 3}
+      propertyPath: m_Size.z
+      value: 0.17588997
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168356571244819560, guid: 4932ea8e765cb96489e0fd0c3a7175b9, type: 3}
+      propertyPath: m_Center.x
+      value: -2.7624495
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168356571244819560, guid: 4932ea8e765cb96489e0fd0c3a7175b9, type: 3}
+      propertyPath: m_Center.y
+      value: -1.0384312
+      objectReference: {fileID: 0}
+    - target: {fileID: 4168356571244819560, guid: 4932ea8e765cb96489e0fd0c3a7175b9, type: 3}
+      propertyPath: m_Center.z
+      value: 0.3344326
+      objectReference: {fileID: 0}
     - target: {fileID: 5949545734158383515, guid: 4932ea8e765cb96489e0fd0c3a7175b9, type: 3}
       propertyPath: m_Name
       value: AscensorChido1 (1)

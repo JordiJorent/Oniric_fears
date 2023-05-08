@@ -35,7 +35,7 @@ public class TriggerEvents : MonoBehaviour
 
                 tmp.activeTriggers++;
                 gameObject.tag = "Untagged";
-                Debug.Log("PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIIIIIIIIIIIIIIIIIIIIIIIIIIIIITTTTTTTTTTTTTTTTTTTT" + tmp.activeTriggers);
+               
                 break;
         }
     }
