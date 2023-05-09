@@ -17,7 +17,6 @@ public class TeleEncindida : MonoBehaviour
     }
     public void Interactuar()
     {
-        Debug.Log("interactuado con tele");
         luz.enabled = false;
         audio.Stop();
         GetComponentsInChildren<MeshRenderer>()[1].material= apagado;
