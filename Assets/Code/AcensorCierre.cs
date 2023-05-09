@@ -46,10 +46,6 @@ public class AcensorCierre : MonoBehaviour
         else if (activeTriggers == 2)
         {
             AllLights.SetActive(false);
-            for (int i = 0; i < maniquis.Count; i++)
-            {
-                maniquis[i].SetActive(false);
-            }
             for (int i = 0; i < maniqui_desaparece.Count; i++)
             {
                 maniqui_desaparece[i].SetActive(false);
