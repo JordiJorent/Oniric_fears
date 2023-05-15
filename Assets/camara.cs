@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;  
 public class camara : MonoBehaviour
 {
@@ -7,7 +8,7 @@ public class camara : MonoBehaviour
     private Transform Player;
     private Rigidbody rb;
     private Quaternion lastQuat;
-    [SerializeField] private float minDistanceBtwnPlayerAndCamera;
+    [SerializeField] private float minDistanceBtwnPlayerAndCamera = 2.3f;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,7 @@ public class camara : MonoBehaviour
     {
         if (Player != null)
         {
-            if(Vector3.Distance(transform.position, Player.position) < minDistanceBtwnPlayerAndCamera)
+            if (Vector3.Distance(transform.position, Player.position) < minDistanceBtwnPlayerAndCamera)
             {
                 transform.rotation = lastQuat;
             }
@@ -29,8 +30,7 @@ public class camara : MonoBehaviour
                 transform.LookAt(Player.position);
                 lastQuat = transform.rotation;
             }
-            
-            
+
         }
     }
 }

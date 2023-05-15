@@ -204,6 +204,14 @@ public class FirstPersonController : MonoBehaviour
     private void Update()
     {
         #region Camera
+        if(Time.timeScale == 0)
+        {
+            cameraCanMove = false;
+        }
+        else
+        {
+            cameraCanMove = true;
+        }
 
         // Control camera movement
         if(cameraCanMove)

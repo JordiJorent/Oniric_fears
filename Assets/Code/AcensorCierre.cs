@@ -50,6 +50,11 @@ public class AcensorCierre : MonoBehaviour
             {
                 maniqui_desaparece[i].SetActive(false);
             }
+            for (int i = 0; i < ManiquisRojos.Count; i++)
+            {
+                ManiquisRojos[i].SetActive(true);
+            }
+                
         }
     }
 }
