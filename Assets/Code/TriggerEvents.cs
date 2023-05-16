@@ -16,6 +16,7 @@ public class TriggerEvents : MonoBehaviour
     public List<GameObject> ManiquisRojos = new List<GameObject>();
     public List<GameObject> ManiquiDesaparece = new List<GameObject>();
     public List<GameObject> ManiquisRojosPasillo = new List<GameObject>();
+    public List<GameObject> ManiquisRojos5 = new List<GameObject>();
 
     
 
@@ -27,17 +28,12 @@ public class TriggerEvents : MonoBehaviour
 
         maniquis = GameObject.FindGameObjectsWithTag("maniqui").ToList();
         ManiquisRojos = GameObject.FindGameObjectsWithTag("maniqui_rojo").ToList();
-        ManiquiDesaparece = GameObject.FindGameObjectsWithTag("maniqui_desaparece").ToList();
-        ManiquisRojosPasillo = GameObject.FindGameObjectsWithTag("maniqui_rojo_p").ToList();
+        ManiquiDesaparece = GameObject.FindGameObjectsWithTag("maniqui_desaparece").ToList();;
 
-        
+
         for (int i = 0; i < ManiquisRojos.Count; i++)
         {
             ManiquisRojos[i].SetActive(false);
-        }
-        for (int i = 0; i < ManiquisRojos.Count; i++)
-        {
-            ManiquisRojosPasillo[i].SetActive(false);
         }
         FinalTrigger.SetActive(false);
     }
@@ -45,10 +41,6 @@ public class TriggerEvents : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (activeTriggers == 1)
-        {
-
-        }
         if (activeTriggers == 2)
         {
             AllLights.SetActive(false);
@@ -56,18 +48,6 @@ public class TriggerEvents : MonoBehaviour
             {
                 ManiquiDesaparece[i].SetActive(false);
             }
-            for (int i = 0; i < ManiquisRojos.Count; i++)
-            {
-                ManiquisRojos[i].SetActive(true);
-            }
-        }
-        if (activeTriggers == 3)
-        {
-
-        }
-        if (activeTriggers == 4)
-        {
-
         }
         if (activeTriggers == 5)
         {
@@ -81,9 +61,9 @@ public class TriggerEvents : MonoBehaviour
                 maniquis[i].SetActive(false);
             }
 
-            for (int i = 0; i < ManiquisRojosPasillo.Count; i++)
+            for (int i = 0; i < ManiquisRojos.Count; i++)
             {
-                ManiquisRojosPasillo[i].SetActive(true);
+                ManiquisRojos[i].SetActive(true);
             }
         }
     }

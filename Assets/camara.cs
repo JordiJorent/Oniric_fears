@@ -23,7 +23,7 @@ public class camara : MonoBehaviour
         {
             if (Vector3.Distance(transform.position, Player.position) < minDistanceBtwnPlayerAndCamera)
             {
-                transform.rotation = lastQuat;
+                transform.rotation = Quaternion.Lerp(transform.rotation, lastQuat, Time.deltaTime*1f);
             }
             else
             {
