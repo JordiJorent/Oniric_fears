@@ -31,7 +31,7 @@ public class Interactor : MonoBehaviour
                 if(hitInfo.transform.gameObject.tag=="television")
                 {
                     hitInfo.transform.gameObject.GetComponent<TeleEncindida>().Interactuar();
-                    hitInfo.transform.gameObject.GetComponent<TriggerEvents>().CustomEvent();
+                    hitInfo.transform.gameObject.GetComponent<ContadorTMP>().CustomEvent();
                 }
                 else if(hitInfo.transform.gameObject.tag == "door")
                 {

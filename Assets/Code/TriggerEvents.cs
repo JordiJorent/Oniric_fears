@@ -8,7 +8,6 @@ public class TriggerEvents : MonoBehaviour
 {
     public GameObject AllLights;
     public GameObject FinalTrigger;
-    public TriggerEvents tmp;
     public Animator animator;
 
     public int activeTriggers = 0;
@@ -24,13 +23,14 @@ public class TriggerEvents : MonoBehaviour
     void Start()
     {
         AllLights = GameObject.Find("Light");
-        tmp = GameObject.Find("Ascensor Trigger").GetComponent<TriggerEvents>();
+        
 
         maniquis = GameObject.FindGameObjectsWithTag("maniqui").ToList();
         ManiquisRojos = GameObject.FindGameObjectsWithTag("maniqui_rojo").ToList();
         ManiquiDesaparece = GameObject.FindGameObjectsWithTag("maniqui_desaparece").ToList();
         ManiquisRojosPasillo = GameObject.FindGameObjectsWithTag("maniqui_rojo_p").ToList();
 
+        
         for (int i = 0; i < ManiquisRojos.Count; i++)
         {
             ManiquisRojos[i].SetActive(false);
@@ -75,6 +75,7 @@ public class TriggerEvents : MonoBehaviour
             FinalTrigger.SetActive(true);
             animator.SetBool("DoorHolder", true);
             activeTriggers = 0;
+
             for (int i = 0; i < maniquis.Count; i++)
             {
                 maniquis[i].SetActive(false);
@@ -86,17 +87,6 @@ public class TriggerEvents : MonoBehaviour
             }
         }
     }
-    public void CustomEvent()
-    {
-        switch (gameObject.name)
-        {
-            default:
-
-                tmp.activeTriggers++;
-                gameObject.tag = "Untagged";
-               
-                break;
-        }
-    }
+    
     
 }

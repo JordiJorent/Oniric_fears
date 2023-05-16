@@ -427,7 +427,6 @@ GameObject:
   - component: {fileID: 6645180063838985879}
   - component: {fileID: 6645180063838985865}
   - component: {fileID: 6645180063838985864}
-  - component: {fileID: 297350149}
   m_Layer: 0
   m_Name: TeleEncendida1
   m_TagString: television
@@ -590,21 +589,7 @@ MonoBehaviour:
   teleapagada: {fileID: 0}
   luz: {fileID: 0}
   apagado: {fileID: 2100000, guid: ec719915477d91340a246b4b2a09a449, type: 2}
-  audio: {fileID: 0}
---- !u!114 &297350149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5834701246994922819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d407454b17a16c646a6d9c2fe827f2bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AllLights: {fileID: 0}
-  tmp: {fileID: 0}
+  staticaudio: {fileID: 0}
 --- !u!1 &6645180062106846378
 GameObject:
   m_ObjectHideFlags: 0
