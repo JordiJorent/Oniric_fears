@@ -22170,6 +22170,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PrefabMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 8055615264297187288, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8055615264673988249, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
       propertyPath: m_Transition
       value: 2
@@ -22198,6 +22202,10 @@ PrefabInstance:
       propertyPath: inGameUI
       value: 
       objectReference: {fileID: 4459864851267516789}
+    - target: {fileID: 8055615266287805632, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
 --- !u!1001 &654835235
