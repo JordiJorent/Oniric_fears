@@ -4,9 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
-public class DELETE : MonoBehaviour
+public class animacion : MonoBehaviour
 {
-
     public VideoPlayer videoPlayer;
     public string nombreDeLaEscena;
 
@@ -21,6 +20,7 @@ public class DELETE : MonoBehaviour
 
 
     }
+
 
 
 }
