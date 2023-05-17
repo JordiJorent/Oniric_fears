@@ -8,7 +8,7 @@ public class MenuInicial : MonoBehaviour
 {
     public void Continuar()
     {
-        SceneManager.LoadScene("Animacion_inicio");
+        SceneManager.LoadScene("Mapa_N1");
     }
 
     public void Sortir()
