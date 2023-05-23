@@ -17,7 +17,7 @@ public class LookAtPlayer : MonoBehaviour
     {
         if (Player != null)
         {
-            cabesa.transform.LookAt(Player.transform.position);
+            transform.LookAt(Player.transform.position);
         }
     }
 }

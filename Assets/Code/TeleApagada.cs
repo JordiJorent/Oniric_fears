@@ -11,7 +11,9 @@ public class TeleApagada : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
+
             teleencendida.Interactuar();
+            
         }
     }
 }

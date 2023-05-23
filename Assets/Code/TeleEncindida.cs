@@ -9,6 +9,8 @@ public class TeleEncindida : MonoBehaviour
     public Light luz;
     public Material apagado;
     public AudioSource staticaudio;
+    public AudioSource apagarTeleFx;
+
 
     void Start()
     {
@@ -20,6 +22,11 @@ public class TeleEncindida : MonoBehaviour
         luz.enabled = false;
         staticaudio.Stop();
         GetComponentsInChildren<MeshRenderer>()[1].material= apagado;
+        OnShutDownTv();
+    }
+    void OnShutDownTv()
+    {
+        apagarTeleFx.PlayOneShot(apagarTeleFx.clip);
     }
 
 }
