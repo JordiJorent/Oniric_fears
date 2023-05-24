@@ -6,6 +6,7 @@ public class RadioInteractor : MonoBehaviour
 {
     public GameObject Radio;
     public AudioSource musica;
+    public AudioSource apagarTeleFx;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,13 +19,19 @@ public class RadioInteractor : MonoBehaviour
         if (musica.isPlaying)
         {
             musica.Pause();
+            OnShutDownTv();
         }
         else 
         {
-            musica.UnPause();  
+            musica.UnPause();
+            OnShutDownTv();
         }
-      
-        
-        
+        void OnShutDownTv()
+        {
+            apagarTeleFx.PlayOneShot(apagarTeleFx.clip);
+        }
+
+
+
     }
 }

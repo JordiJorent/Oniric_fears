@@ -5,6 +5,7 @@ using UnityEngine;
 public class jumpscarepasos : MonoBehaviour
 {
     public GameObject sonido;
+    public GameObject jumpscare;
 
     void OnTriggerEnter(Collider other)
     {
@@ -12,6 +13,8 @@ public class jumpscarepasos : MonoBehaviour
         {
             sonido.SetActive(true);
             Destroy(this.gameObject);
+            jumpscare.SetActive(true);
+
         }
     }
 }

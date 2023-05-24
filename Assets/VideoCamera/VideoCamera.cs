@@ -8,6 +8,7 @@ public class VideoCamera : MonoBehaviour
     public GameObject secondPos;
     public GameObject firstPos;
     private bool isInSecondPos;
+    public GameObject recOn;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,7 @@ public class VideoCamera : MonoBehaviour
         {
             firstPos.SetActive(true);
             secondPos.SetActive(false);
+            recOn.SetActive(true);
         }
         else
         {
