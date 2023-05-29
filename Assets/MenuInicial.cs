@@ -6,9 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class MenuInicial : MonoBehaviour
 {
+    public AudioSource src;
+    public AudioClip mouseFx;
     public void Continuar()
     {
         SceneManager.LoadScene("animacion_inicio");
+        src = GetComponent<AudioSource>();
     }
 
     public void Sortir()
@@ -16,6 +19,10 @@ public class MenuInicial : MonoBehaviour
         Debug.Log("Sortir...");
         Application.Quit();
 
+    }
+    public void PlaySoundFx()
+    {
+        src.PlayOneShot(mouseFx);
     }
     
 }
