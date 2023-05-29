@@ -27,23 +27,39 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(pause);
         if (pause)
         {
-            Time.timeScale = 0;
-            Cursor.lockState= CursorLockMode.None;
-            Cursor.visible = true;
-            inGameUI.SetActive(false);
+            EntrarMenuDePausa();
         }       
         else
         {
-            Time.timeScale = 1;
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-            inGameUI.SetActive(true);
+            SalirMenuDePausa();
         }
     }
 
     public void Menu()
     {
         SceneManager.LoadScene(0);
+    }
+    public void EntrarMenuDePausa()
+    {
+        Time.timeScale = 0;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        inGameUI.SetActive(false);
+    }
+    public void SalirMenuDePausa()
+    {
+        Time.timeScale = 1;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        inGameUI.SetActive(true);
+    }
+    public void SalirAlMenuInicial()
+    {
+        Time.timeScale = 1;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        inGameUI.SetActive(false);
+        SceneManager.LoadScene("Menú_inicial 1");
     }
 
 }
