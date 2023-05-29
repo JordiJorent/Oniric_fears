@@ -11,6 +11,7 @@ public class PauseMenu : MonoBehaviour
     private void Awake()
     {
         pause = false;
+        inGameUI = GameObject.Find("CrosshairAndStamina");
     }
 
     // Update is called once per frame
