@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using static Unity.Burst.Intrinsics.X86.Avx;
 
 public class TriggerEvents : MonoBehaviour
 {
     public GameObject AllLights;
     public GameObject FinalTrigger;
     public Animator animator;
+    public GameObject cameraHand;
+    public GameObject cameraFace;
+    public GameObject videoCamera;
 
     public int activeTriggers = 0;
 
@@ -18,8 +20,13 @@ public class TriggerEvents : MonoBehaviour
     public List<GameObject> ManiquisRojosPasillo = new List<GameObject>();
     public List<GameObject> ManiquisRojos5 = new List<GameObject>();
 
-    
 
+    private void Awake()
+    {
+        cameraFace = GameObject.Find("Camera_InFaze");
+        cameraHand = GameObject.Find("Camera_InHand");
+        videoCamera = GameObject.Find("VideoCamera");
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -64,9 +71,9 @@ public class TriggerEvents : MonoBehaviour
             for (int i = 0; i < ManiquisRojos.Count; i++)
             {
                 ManiquisRojos[i].SetActive(true);
+                
             }
+            Destroy(videoCamera);
         }
-    }
-    
-    
+    }    
 }
