@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
 public class animacion : MonoBehaviour
-
 {
     Vector3 AnteriorPosition;
     public VideoPlayer videoPlayer;
@@ -21,13 +20,14 @@ public class animacion : MonoBehaviour
         TemporizadorActual = 0.0f;
         videoPlayer.loopPointReached += CambiarEscena;
         AnteriorPosition = Input.mousePosition;
-        Boton.SetActive(false);
+        if(Boton != null)
+            Boton.SetActive(false);
 
     }
 
     private void Update()
     {
-        if (videoPlayer.isPlaying)
+        if (videoPlayer.isPlaying && videoPlayer != null)
         {
             if (Boton.activeSelf)
             {
@@ -39,24 +39,17 @@ public class animacion : MonoBehaviour
                 }
             }
 
-
             if (Input.mousePosition != AnteriorPosition)
             {
                 AnteriorPosition = Input.mousePosition;
                 Boton.SetActive(true);
                 TemporizadorActual = 0.0f;
             }
-
-
         }
-
     }
     public void CambiarEscena(VideoPlayer vp)
     {
         SceneManager.LoadScene(nombreDeLaEscena);
-
-
-
     }
 
 

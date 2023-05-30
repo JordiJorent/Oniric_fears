@@ -35719,11 +35719,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 861300713}
   m_Mesh: {fileID: 7062305368710723353, guid: 7b4f34ff2bf1ae443b5b034a7dd89fc8, type: 3}
---- !u!1 &861588550 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9163026900766101737, guid: 16a9a512b78ff6247bdf2690728f02fa, type: 3}
-  m_PrefabInstance: {fileID: 2005609954}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &864173037 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2653133479536133151, guid: 7e28091e58c6b3446836601056f3fdc5, type: 3}
@@ -57405,8 +57400,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24f9bcb44ddcc0343ac8a97affa9d941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonido: {fileID: 861588550}
   jumpscare: {fileID: 213263171}
+  nameOfTheSonidoGameObject: pasos
 --- !u!54 &1489367679
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -80478,6 +80473,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9163026900766101736, guid: 16a9a512b78ff6247bdf2690728f02fa, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9163026900766101736, guid: 16a9a512b78ff6247bdf2690728f02fa, type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
       value: 1
       objectReference: {fileID: 0}
@@ -80487,10 +80486,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9163026900766101737, guid: 16a9a512b78ff6247bdf2690728f02fa, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9163026900766101738, guid: 16a9a512b78ff6247bdf2690728f02fa, type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9163026900766101738, guid: 16a9a512b78ff6247bdf2690728f02fa, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9163026900766101739, guid: 16a9a512b78ff6247bdf2690728f02fa, type: 3}
@@ -80500,6 +80503,10 @@ PrefabInstance:
     - target: {fileID: 9163026900766101739, guid: 16a9a512b78ff6247bdf2690728f02fa, type: 3}
       propertyPath: speed
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9163026900766101749, guid: 16a9a512b78ff6247bdf2690728f02fa, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9163026900766101751, guid: 16a9a512b78ff6247bdf2690728f02fa, type: 3}
       propertyPath: m_RootOrder

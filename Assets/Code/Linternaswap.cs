@@ -8,7 +8,8 @@ public class Linternaswap : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        flashlight.SetActive(false);
+        if(flashlight != null)
+            flashlight.SetActive(false);
     }
 
     // Update is called once per frame
@@ -21,7 +22,8 @@ public class Linternaswap : MonoBehaviour
                 if (hit.transform.gameObject.tag == "linterna")
                 {
                     Destroy(hit.transform.gameObject);
-                    flashlight.SetActive(true);
+                    if(flashlight != null)
+                        flashlight.SetActive(true);
                 }
             }
         }
