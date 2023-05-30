@@ -32,7 +32,6 @@ public class TriggerEvents : MonoBehaviour
     void Start()
     {
         AllLights = GameObject.Find("Light");
-        
 
         maniquis = GameObject.FindGameObjectsWithTag("maniqui").ToList();
         ManiquisRojos = GameObject.FindGameObjectsWithTag("maniqui_rojo").ToList();
