@@ -11,6 +11,7 @@ public class TriggerEvents : MonoBehaviour
     public GameObject cameraHand;
     public GameObject cameraFace;
     public GameObject videoCamera;
+    public GameObject maniquiCaminate;
 
     public int activeTriggers = 0;
 
@@ -74,6 +75,7 @@ public class TriggerEvents : MonoBehaviour
                 
             }
             Destroy(videoCamera);
+            Destroy(maniquiCaminate);
         }
     }    
 }
