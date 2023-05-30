@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class sonidoDePuerta : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public GameObject sonido;
+    private bool doOnce;
+    private void Awake()
     {
-        
+        doOnce = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter(Collider other)
     {
-        
+        if (other.gameObject.CompareTag("Player") && !doOnce)
+        {
+            sonido.GetComponent<AudioSource>().PlayOneShot(sonido.GetComponent<AudioSource>().clip);
+            doOnce = true;
+        }
     }
 }
