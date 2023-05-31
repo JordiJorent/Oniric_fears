@@ -11,7 +11,26 @@ public class CambioDeEscena : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(scenename);
+            StartCoroutine(waitForProgram());
         }
+    }
+    IEnumerator waitForProgram()
+    {
+        yield return new WaitForSeconds(1);
+        StartCoroutine(LoadAsyncScene());
+    }
+
+    IEnumerator LoadAsyncScene()
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(scenename);
+        asyncLoad.allowSceneActivation = false;
+        yield return (asyncLoad.progress > 0.9f);
+        StartCoroutine(loaded(asyncLoad));
+    }
+
+    IEnumerator loaded(AsyncOperation sync)
+    {
+        yield return new WaitForSeconds(1);
+        sync.allowSceneActivation = true;
     }
 }
