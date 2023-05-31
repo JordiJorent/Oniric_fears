@@ -8,10 +8,25 @@ public class PauseMenu : MonoBehaviour
     public bool pause;
     public GameObject pauseMenu;
     public GameObject inGameUI;
+    private SettingsManager sM;
     private void Awake()
     {
-        pause = false;
+        sM = GameObject.Find("SettingsManager").GetComponent<SettingsManager>();
         inGameUI = GameObject.Find("CrosshairAndStamina");
+        
+    }
+    IEnumerator WaitToHideUI(float s)
+    {
+        yield return new WaitForSeconds(s);
+        pauseMenu.SetActive(false);
+        pause = false;
+    }
+    private void Start()
+    {
+        sM.Resolutions();
+        Debug.Log("Reached start of pause Menu");
+        StartCoroutine(WaitToHideUI(.25f));
+        Debug.Log("Reached end of pause Menu start()");
     }
 
     // Update is called once per frame
@@ -45,7 +60,9 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        pause = false;
         inGameUI.SetActive(false);
+        pauseMenu.SetActive(true);
     }
     public void SalirMenuDePausa()
     {
@@ -53,6 +70,7 @@ public class PauseMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         inGameUI.SetActive(true);
+        pauseMenu.SetActive(false);
     }
     public void SalirAlMenuInicial()
     {
