@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8000705176808142153}
   m_Layer: 0
   m_Name: Bone.004_end
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 1346993342060301731}
   m_Layer: 2
   m_Name: Particle System
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -769,7 +769,7 @@ ParticleSystem:
     m_UseMeshMaterialIndex: 0
     m_UseMeshColors: 1
     alignToDirection: 0
-    m_Texture: {fileID: 2800000, guid: 08679381959ed3c429b09adbb0ca7ad7, type: 3}
+    m_Texture: {fileID: 2800000, guid: 8709cfa4a3c9d674b932b6fa5f306672, type: 3}
     m_TextureClipChannel: 0
     m_TextureClipThreshold: 0
     m_TextureUVChannel: 0
@@ -4794,7 +4794,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 14e4e7254092e6344bf47c8fb6a4537d, type: 2}
+  - {fileID: 2100000, guid: 526cb2d3deabd4f4d805ba0693de1749, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4856,7 +4856,7 @@ GameObject:
   - component: {fileID: 1331978086010939604}
   m_Layer: 0
   m_Name: Bone.003
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4888,7 +4888,7 @@ GameObject:
   - component: {fileID: 1724976402926829672}
   m_Layer: 0
   m_Name: Bone.004
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4920,7 +4920,7 @@ GameObject:
   - component: {fileID: 4862791693232583276}
   m_Layer: 0
   m_Name: Bone.004_end_end
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4951,7 +4951,7 @@ GameObject:
   - component: {fileID: 1734274487738598257}
   m_Layer: 0
   m_Name: Bone.001
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4987,7 +4987,7 @@ GameObject:
   - component: {fileID: 1900865459}
   m_Layer: 0
   m_Name: DefectumTremendamenteAnimado
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5043,14 +5043,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
   controller: {fileID: 0}
-  emenyHead: {fileID: 1724976402926829672}
-  startPosition: {fileID: 0}
+  enemyHead: {fileID: 0}
+  startPosition: {x: 0, y: 0, z: 0}
   player: {fileID: 0}
   anim: {fileID: 4579056886361024098}
   enemyStartPosition: {fileID: 0}
   enemy: {fileID: 4579056886462748877}
-  silbidoAudioLoop: {fileID: 0}
-  gritoAudioSource: {fileID: 0}
+  silbidoAudioLoop: {fileID: 1900865459}
+  gritoAudioSource: {fileID: 5214142814503502353}
   grito: {fileID: 8300000, guid: 34278e6192aa0ef46a2af68499f98794, type: 3}
   silbido: {fileID: 8300000, guid: 5c81886bc0cefc94981b81a5eb34c7c5, type: 3}
   esperarAQueElSonidoDelGritoTermine: 0
@@ -5076,7 +5076,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: e5e499ae4e3e54b419d970913561e7ef, type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5c81886bc0cefc94981b81a5eb34c7c5, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 0.4
@@ -5246,7 +5246,7 @@ GameObject:
   - component: {fileID: 5430332301906034301}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5338,7 +5338,7 @@ GameObject:
   - component: {fileID: 4579056886462748915}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5397,7 +5397,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radar: {fileID: 4579056886462748876}
   anim: {fileID: 4579056886361024098}
-  jugador: {fileID: 1860930629168554042, guid: 2eac08d2dcfe44b4184ac9ff359db1d2, type: 3}
+  jugador: {fileID: 0}
 --- !u!1 &4579056887730847935
 GameObject:
   m_ObjectHideFlags: 0
@@ -5407,9 +5407,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4579056887730847928}
+  - component: {fileID: 5214142814503502353}
   m_Layer: 0
   m_Name: Audio Source
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5429,6 +5430,102 @@ Transform:
   m_Father: {fileID: 4579056886462748877}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &5214142814503502353
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4579056887730847935}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 34278e6192aa0ef46a2af68499f98794, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &6785153905429694172
 GameObject:
   m_ObjectHideFlags: 0
@@ -5440,7 +5537,7 @@ GameObject:
   - component: {fileID: 4951285396065127574}
   m_Layer: 0
   m_Name: Armature
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5472,7 +5569,7 @@ GameObject:
   - component: {fileID: 7264883544884752378}
   m_Layer: 0
   m_Name: Bone
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5504,7 +5601,7 @@ GameObject:
   - component: {fileID: 637139592923910324}
   m_Layer: 0
   m_Name: Bone.002
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

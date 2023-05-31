@@ -12,6 +12,7 @@ public class enemigo : MonoBehaviour
 
     private void Start()
     {
+        jugador = GameObject.Find("FirstPersonControllerN2");
         Recalcular();
         StartCoroutine(Esperaentrecaluclos());
     }
@@ -37,11 +38,7 @@ public class enemigo : MonoBehaviour
 
     void Recalcular()
     {
-
-
-
         radar.SetDestination(jugador.transform.position);
-
     }
 
     IEnumerator Esperaentrecaluclos()

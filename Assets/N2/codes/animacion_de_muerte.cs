@@ -6,8 +6,8 @@ public class animacion_de_muerte : MonoBehaviour
 {
     public Camera cam;
     public FirstPersonController controller;
-    public Transform emenyHead;
-    public Transform startPosition;
+    public Transform enemyHead;
+    public Vector3 startPosition;
     public Transform player;
     public Animator anim;
     public Transform enemyStartPosition;
@@ -20,19 +20,28 @@ public class animacion_de_muerte : MonoBehaviour
     private void Start()
     {
         gritoAudioSource.enabled = false;
+        cam = GameObject.Find("PlayerCamera").GetComponent<Camera>();
+        controller = FindObjectOfType<FirstPersonController>();
+        player = GameObject.Find("FirstPersonControllerN2").GetComponent<Transform>();
+        anim = GetComponent<Animator>();
+        enemyHead = GameObject.Find("Bone.004").GetComponent<Transform>();
+        startPosition = player.position;
+        enemyStartPosition = enemy;
+        silbidoAudioLoop = GetComponent<AudioSource>();
+        gritoAudioSource = GameObject.Find("Audio Source").GetComponent<AudioSource>();
     }
     public void StartDeadAnimation()
     {
         controller.playerCanMove = false;
         controller.cameraCanMove = false;
-        cam.transform.LookAt(emenyHead);
+        cam.transform.LookAt(enemyHead);
 
     }
     public void EndDeadAnimation()
     {
         controller.playerCanMove = true;
         controller.cameraCanMove = true;
-        player.transform.position = startPosition.transform.position;
+        player.transform.position = startPosition;
         enemy.transform.position = enemyStartPosition.position;
         anim.SetBool("m", false);
     }
