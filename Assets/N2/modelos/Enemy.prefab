@@ -5049,9 +5049,11 @@ MonoBehaviour:
   anim: {fileID: 4579056886361024098}
   enemyStartPosition: {fileID: 0}
   enemy: {fileID: 4579056886462748877}
-  gritosource: {fileID: 0}
+  silbidoAudioLoop: {fileID: 0}
+  gritoAudioSource: {fileID: 0}
   grito: {fileID: 8300000, guid: 34278e6192aa0ef46a2af68499f98794, type: 3}
   silbido: {fileID: 8300000, guid: 5c81886bc0cefc94981b81a5eb34c7c5, type: 3}
+  esperarAQueElSonidoDelGritoTermine: 0
 --- !u!168 &1900865458
 AudioEchoFilter:
   m_ObjectHideFlags: 0
@@ -5395,7 +5397,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radar: {fileID: 4579056886462748876}
   anim: {fileID: 4579056886361024098}
-  jugador: {fileID: 0}
+  jugador: {fileID: 1860930629168554042, guid: 2eac08d2dcfe44b4184ac9ff359db1d2, type: 3}
 --- !u!1 &4579056887730847935
 GameObject:
   m_ObjectHideFlags: 0
