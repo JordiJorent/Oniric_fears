@@ -12,7 +12,7 @@ public class PauseMenu : MonoBehaviour
     private void Awake()
     {
         sM = GameObject.Find("SettingsManager").GetComponent<SettingsManager>();
-        inGameUI = GameObject.Find("CrosshairAndStamina");
+        inGameUI = GameObject.Find("InGameUI");
         
     }
     IEnumerator WaitToHideUI(float s)
