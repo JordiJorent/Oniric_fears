@@ -18,7 +18,6 @@ public class MenuInicial : MonoBehaviour
     {
         Debug.Log("Sortir...");
         Application.Quit();
-
     }
     public void PlaySoundFx()
     {

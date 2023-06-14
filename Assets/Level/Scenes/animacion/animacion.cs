@@ -22,7 +22,6 @@ public class animacion : MonoBehaviour
         AnteriorPosition = Input.mousePosition;
         if(Boton != null)
             Boton.SetActive(false);
-
     }
 
     private void Update()
@@ -45,13 +44,15 @@ public class animacion : MonoBehaviour
                 Boton.SetActive(true);
                 TemporizadorActual = 0.0f;
             }
+            if(videoPlayer.frame == 315)
+            {
+                SceneManager.LoadScene(nombreDeLaEscena);
+            }
         }
     }
     public void CambiarEscena(VideoPlayer vp)
     {
         SceneManager.LoadScene(nombreDeLaEscena);
     }
-
-
 }
 
