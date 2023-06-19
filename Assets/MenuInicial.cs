@@ -16,7 +16,6 @@ public class MenuInicial : MonoBehaviour
 
     public void Sortir()
     {
-        Debug.Log("Sortir...");
         Application.Quit();
     }
     public void PlaySoundFx()
