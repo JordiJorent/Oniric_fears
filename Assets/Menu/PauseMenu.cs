@@ -8,10 +8,10 @@ public class PauseMenu : MonoBehaviour
     public bool pause;
     public GameObject pauseMenu;
     public GameObject inGameUI;
-    private SettingsManager sM;
+    
     private void Awake()
     {
-        sM = GameObject.Find("SettingsManager").GetComponent<SettingsManager>();
+        
         inGameUI = GameObject.Find("InGameUI");
         
     }
@@ -23,7 +23,7 @@ public class PauseMenu : MonoBehaviour
     }
     private void Start()
     {
-        sM.Resolutions();
+       
         Debug.Log("Reached start of pause Menu");
         StartCoroutine(WaitToHideUI(.25f));
         Debug.Log("Reached end of pause Menu start()");
