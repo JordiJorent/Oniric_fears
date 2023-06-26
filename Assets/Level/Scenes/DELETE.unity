@@ -27079,6 +27079,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PrefabMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 5223622110135741922, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 654821912}
+    - target: {fileID: 5223622110135741922, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetResolution
+      objectReference: {fileID: 0}
     - target: {fileID: 6244920541652231251, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -10.517822
