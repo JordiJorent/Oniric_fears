@@ -27071,9 +27071,33 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4751238929179383187, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
+      propertyPath: m_IsOn
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5072222003742208617, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
       propertyPath: m_Name
       value: PrefabMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 6244920541652231251, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -10.517822
+      objectReference: {fileID: 0}
+    - target: {fileID: 6275690566361706380, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 654821912}
+    - target: {fileID: 6275690566361706380, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetFullscreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6275690566361706380, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MenuSettings, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7018844390733231452, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7018844390733231452, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
       propertyPath: m_AnchorMax.y
@@ -27094,6 +27118,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2684525113699137696, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
   m_PrefabInstance: {fileID: 654821910}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &654821912 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6191928330700204832, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
+  m_PrefabInstance: {fileID: 654821910}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 984d2ef30a068ce41815b50beee6ab1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &654835235
 PrefabInstance:
   m_ObjectHideFlags: 0
