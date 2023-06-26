@@ -38,6 +38,7 @@ public class FirstPersonController : MonoBehaviour
     private float yaw = 0.0f;
     private float pitch = 0.0f;
     private Image crosshairObject;
+    private MenuSettings menuSettings;
 
     #region Camera Zoom Variables
 
@@ -136,7 +137,8 @@ public class FirstPersonController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
 
         crosshairObject = GetComponentInChildren<Image>();
-
+        menuSettings = GameObject.Find("OptionsMenu").GetComponent<MenuSettings>();
+        
         // Set internal variables
         playerCamera.fieldOfView = fov;
         originalScale = transform.localScale;
@@ -201,6 +203,10 @@ public class FirstPersonController : MonoBehaviour
         }
 
         #endregion
+
+        mouseSensitivity = menuSettings.mouseSensitivity;
+        // ESCONDER EL MENU DE OPCIONES
+        menuSettings.gameObject.SetActive(false);
     }
 
     float camRotation;
@@ -220,14 +226,17 @@ public class FirstPersonController : MonoBehaviour
         // Control camera movement
         if(cameraCanMove)
         {
+            mouseSensitivity = menuSettings.mouseSensitivity;
             yaw = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * mouseSensitivity;
 
             if (!invertCamera)
             {
+                mouseSensitivity = menuSettings.mouseSensitivity;
                 pitch -= mouseSensitivity * Input.GetAxis("Mouse Y");
             }
             else
             {
+                mouseSensitivity = menuSettings.mouseSensitivity;
                 // Inverted Y
                 pitch += mouseSensitivity * Input.GetAxis("Mouse Y");
             }
