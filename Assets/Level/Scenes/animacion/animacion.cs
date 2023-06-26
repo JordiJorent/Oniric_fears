@@ -44,10 +44,7 @@ public class animacion : MonoBehaviour
                 Boton.SetActive(true);
                 TemporizadorActual = 0.0f;
             }
-            if(videoPlayer.frame == 315)
-            {
-                SceneManager.LoadScene(nombreDeLaEscena);
-            }
+           
         }
     }
     public void CambiarEscena(VideoPlayer vp)
