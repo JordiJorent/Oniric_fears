@@ -4936,6 +4936,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 589837731, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 827580323, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3379612841441138452, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -59191,9 +59199,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: FirstPersonControllerN2
       objectReference: {fileID: 0}
+    - target: {fileID: 1860930629861433004, guid: 2eac08d2dcfe44b4184ac9ff359db1d2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2388340125263054430, guid: 2eac08d2dcfe44b4184ac9ff359db1d2, type: 3}
       propertyPath: m_RenderPostProcessing
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2609772211545153652, guid: 2eac08d2dcfe44b4184ac9ff359db1d2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2609772212165763476, guid: 2eac08d2dcfe44b4184ac9ff359db1d2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2eac08d2dcfe44b4184ac9ff359db1d2, type: 3}
