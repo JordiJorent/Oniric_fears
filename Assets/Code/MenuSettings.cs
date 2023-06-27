@@ -18,6 +18,9 @@ public class MenuSettings : MonoBehaviour
 
     Resolution[] resolutions;
 
+    // Scripteable Object
+    public SaveSettingsBtwnScenes savedSettings;
+
     // GAMEOBJECTS DE LOS BOTONES DE LA UI
     public Toggle invertMouse;
     public Slider volumeSlider;
@@ -25,20 +28,13 @@ public class MenuSettings : MonoBehaviour
     public void SetVolume(float volume)
     {
         audioMixer.SetFloat("Volume", volume);
-        saveVolumeValue = volume;
+        savedSettings.saveVolumeValue = volume;
     }
 
     public void SetSensitivity(float sens)
     {
-        if(isInverted)
-        {
-            mouseSensitivity = -sens;
-        }
-        else
-        {
-            mouseSensitivity = sens;
-        }
-        saveSens = mouseSensitivity;
+        mouseSensitivity = sens;
+        savedSettings.saveSens = mouseSensitivity;
     }
     public void SetFullscreen(bool isFullsrceen)
     {
@@ -67,6 +63,7 @@ public class MenuSettings : MonoBehaviour
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
+        LoadSavedSettings();
     }
 
     public void SetResolution(int resolutionIndex)
@@ -76,12 +73,14 @@ public class MenuSettings : MonoBehaviour
     }
     public void InvertAxis()
     {
-        if(mouseSensitivity < 0) // esta invertido
+        if(invertMouse.isOn) // esta invertido
         {
+            savedSettings.isInverted = true;
             isInverted = true;
         }
         else
         {
+            savedSettings.isInverted = false;
             isInverted = false;
         }
         mouseSensitivity = -mouseSensitivity;
@@ -89,8 +88,18 @@ public class MenuSettings : MonoBehaviour
 
     private void OnEnable()
     {
-        invertMouse.isOn = isInverted;
-        volumeSlider.value = saveVolumeValue;
-        sensSlider.value = saveSens;
+        //invertMouse.isOn = isInverted;
+        //volumeSlider.value = saveVolumeValue;
+        //sensSlider.value = saveSens;
+        LoadSavedSettings();
+    }
+    public void LoadSavedSettings()
+    {
+        invertMouse.isOn = savedSettings.isInverted;
+        volumeSlider.value = savedSettings.saveVolumeValue;
+        sensSlider.value = savedSettings.saveSens;
+        mouseSensitivity = savedSettings.saveSens;
+        isInverted = savedSettings.isInverted;
+        
     }
 }
