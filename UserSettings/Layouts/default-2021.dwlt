@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 100
+  controlID: 24
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 88
+  controlID: 25
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 89
+  controlID: 26
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -324,36 +324,36 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/N2/audio
+    - Assets/Level/Prefabs/Rusty Flashlight
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 65
   m_LastFolders:
-  - Assets/N2/audio
+  - Assets/Level/Prefabs/Rusty Flashlight
   m_LastFoldersGridSize: 65
-  m_LastProjectPath: C:\Users\jupiter\Documents\GitHub\Oniric_fears\Packages\Oniric_fears
+  m_LastProjectPath: C:\Users\jupiter\Documents\GitHub\Oniric_fears
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 226}
-    m_SelectedIDs: 789c0000
-    m_LastClickedID: 40056
-    m_ExpandedIDs: 00000000f69b0000f89b0000fa9b0000fc9b0000fe9b0000009c0000029c0000
+    scrollPos: {x: 0, y: 38}
+    m_SelectedIDs: 30770000
+    m_LastClickedID: 30512
+    m_ExpandedIDs: 00000000c0740000c2740000c4740000c6740000c8740000ca740000cc740000ce740000d0740000d2740000d4740000d6740000d8740000da740000dc740000de740000e0740000e2740000e4740000e6740000e8740000ea740000ec740000ee740000f07400003a75000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Prefabs
+      m_OriginalName: Prefabs
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 29896
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
@@ -367,7 +367,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f69b0000f89b0000fa9b0000fc9b0000fe9b0000009c0000029c0000
+    m_ExpandedIDs: 00000000c0740000c2740000c4740000c6740000c8740000ca740000cc740000ce740000d0740000d2740000d4740000d6740000d8740000da740000dc740000de740000e0740000e2740000e4740000e6740000e8740000ea740000ec740000ee740000f0740000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -456,7 +456,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 50f9ffff
+      m_ExpandedIDs: 6493ffffbab0ffff3cf0ffffdef9ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -760,9 +760,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 4.409468, y: 11.426494, z: 7.781357}
+    m_Target: {x: -6.5738106, y: 7.368784, z: 6.9499855}
     speed: 2
-    m_Value: {x: 243.07957, y: 96.45916, z: -92.895805}
+    m_Value: {x: -6.5738106, y: 7.368784, z: 6.9499855}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -809,13 +809,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.24947351, y: 0.45127693, z: -0.13283093, w: 0.8465999}
+    m_Target: {x: 0.18980332, y: 0.6859287, z: -0.19353864, w: 0.67536193}
     speed: 2
-    m_Value: {x: 0.29261407, y: -0.01853955, z: -0.0055118776, w: -0.95607805}
+    m_Value: {x: 0.18964559, y: 0.6831387, z: -0.19164889, w: 0.6786949}
   m_Size:
-    m_Target: 2.1951668
+    m_Target: 5.3239655
     speed: 2
-    m_Value: 9.082665
+    m_Value: 5.323975
   m_Ortho:
     m_Target: 0
     speed: 2
