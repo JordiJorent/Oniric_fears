@@ -5,7 +5,7 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
-    AudioSource audio;
+    AudioSource audioSource;
     public List<AudioClip> clips = new List<AudioClip>();
 
     private void Awake()
@@ -15,7 +15,7 @@ public class AudioManager : MonoBehaviour
             instance = this;
         }
 
-        audio = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void PlaySFX(string audioName)
@@ -24,7 +24,7 @@ public class AudioManager : MonoBehaviour
         {
             if (clips[i].name == audioName)
             {
-                audio.PlayOneShot(clips[i]);
+                audioSource.PlayOneShot(clips[i]);
                 return;
             }
         }
