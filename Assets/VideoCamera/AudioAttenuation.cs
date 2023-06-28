@@ -37,7 +37,7 @@ public class AudioAttenuation : MonoBehaviour
         else
         {
             src.volume = Mathf.Lerp(src.volume, decreasedVolume, 0.15f);
-            src.pitch = Mathf.Lerp(src.volume, increasedBassPitch, 0.15f);
+            src.pitch = Mathf.Lerp(src.pitch, increasedBassPitch, 0.15f);
         }
         decreasedVolume = initVolume / ammountToDecraseVolume;
         increasedBassPitch = initialPitch / ammountToDecrasePitch;
@@ -46,23 +46,20 @@ public class AudioAttenuation : MonoBehaviour
     {
         bool ret;
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, player.position - transform.position, out hit, Vector3.Distance(transform.position, player.position)))
+        if (Physics.Raycast(transform.position, player.position - transform.position, out hit, Vector3.Distance(transform.position, player.position)))  
         {
             if(hit.transform.gameObject.CompareTag("Player"))
             {
                 ret = true;
-                Debug.DrawRay(transform.position, (player.position - transform.position) * 100f, Color.green);
             }
             else
             {
                 ret = false;
-                Debug.DrawRay(transform.position, (player.position - transform.position) * 100f, Color.blue);
             }
         }
         else
         {
             ret = false;
-            Debug.DrawRay(transform.position, (player.position - transform.position) * 100f, Color.blue);
         }
         
         return ret;

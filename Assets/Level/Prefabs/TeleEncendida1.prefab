@@ -429,6 +429,7 @@ GameObject:
   - component: {fileID: 6645180063838985864}
   - component: {fileID: 1832400529497748107}
   - component: {fileID: 1014126737}
+  - component: {fileID: 276997757472756873}
   m_Layer: 0
   m_Name: TeleEncendida1
   m_TagString: television
@@ -702,6 +703,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tmp: {fileID: 0}
+--- !u!114 &276997757472756873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5834701246994922819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08e3b52fa76132641ad328b363e707fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  ammountToDecrasePitch: 1.1
+  ammountToDecraseVolume: 30
 --- !u!1 &6645180062106846378
 GameObject:
   m_ObjectHideFlags: 0

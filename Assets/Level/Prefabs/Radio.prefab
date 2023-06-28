@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 527691547510565389}
   - component: {fileID: 527691547510565390}
   - component: {fileID: 527691547510565388}
+  - component: {fileID: 2537045593777384584}
   m_Layer: 0
   m_Name: Radio
   m_TagString: radio
@@ -256,6 +257,58 @@ MonoBehaviour:
   Radio: {fileID: 834245081194518239}
   musica: {fileID: 527691547510565390}
   apagarTeleFx: {fileID: 8860778262392771416}
+--- !u!169 &2537045593777384584
+AudioLowPassFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834245081194518239}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_LowpassResonanceQ: 1
+  lowpassLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.9984443
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.19866352
+      value: 0.99277157
+      inSlope: -0.13243969
+      outSlope: -2.798993
+      tangentMode: 1
+      weightedMode: 0
+      inWeight: 0.5046687
+      outWeight: 0.067382485
+    - serializedVersion: 3
+      time: 0.38521913
+      value: 0.50805974
+      inSlope: -1.0309246
+      outSlope: -1.0903986
+      tangentMode: 1
+      weightedMode: 0
+      inWeight: 0.8388691
+      outWeight: 0.15641965
+    - serializedVersion: 3
+      time: 1
+      value: 0.1881187
+      inSlope: -0.19020036
+      outSlope: -0.19020036
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.15267058
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2980643586103101516
 GameObject:
   m_ObjectHideFlags: 0
