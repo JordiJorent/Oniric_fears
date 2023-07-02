@@ -22,6 +22,10 @@ public class animacion : MonoBehaviour
         AnteriorPosition = Input.mousePosition;
         if(Boton != null)
             Boton.SetActive(false);
+        if (Cursor.lockState == CursorLockMode.Locked)
+        {
+            StartCoroutine(ActivateCursor());
+        }
     }
 
     private void Update()
@@ -44,8 +48,14 @@ public class animacion : MonoBehaviour
                 Boton.SetActive(true);
                 TemporizadorActual = 0.0f;
             }
-           
         }
+    }
+
+    IEnumerator ActivateCursor()
+    {
+        yield return new WaitForSeconds(1);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
     public void CambiarEscena(VideoPlayer vp)
     {

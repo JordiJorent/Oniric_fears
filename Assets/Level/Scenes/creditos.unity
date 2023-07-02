@@ -1880,6 +1880,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2584498618835814832, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 660046893}
+    - target: {fileID: 2584498618835814832, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SalirAlMenuInicial
+      objectReference: {fileID: 0}
     - target: {fileID: 3379612841441138452, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1964,20 +1972,39 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8055615265747656231, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 660046893}
+    - target: {fileID: 8055615265747656231, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SalirMenuDePausa
+      objectReference: {fileID: 0}
     - target: {fileID: 8191939481196374899, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.9302326
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8191939481196374899, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8191939481196374899, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.9302326
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
+--- !u!114 &660046893 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1916337391213488036, guid: 9178aa377ec9ae0438eb0efeec765fa9, type: 3}
+  m_PrefabInstance: {fileID: 660046892}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50939f85226f8f14194062dbd60db4f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &679507446
 PrefabInstance:
   m_ObjectHideFlags: 0
