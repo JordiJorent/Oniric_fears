@@ -16,8 +16,11 @@ public class Interactor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Reticle.SetActive(true);
-        InteractReticle.SetActive(false);
+        if(Reticle && InteractReticle)
+        {
+            Reticle.SetActive(true);
+            InteractReticle.SetActive(false);
+        }
     }
 
     // Update is called once per frame
