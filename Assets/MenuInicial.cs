@@ -9,11 +9,18 @@ public class MenuInicial : MonoBehaviour
 {
     public AudioSource audioSource;
     public AudioClip mouseFx;
-    
+    private void Start()
+    {
+        if(GetComponent<AudioSource>() != null)
+            audioSource = GetComponent<AudioSource>();
+    }
+
     public void Continuar()
     {
-        SceneManager.LoadScene("animacion_inicio");
-        audioSource = GetComponent<AudioSource>();
+        SceneManager.LoadScene("animacion_inicio"); 
+        //SceneManager.LoadScene("DELETE");
+
+        
     }
     public void Sortir()
     {
