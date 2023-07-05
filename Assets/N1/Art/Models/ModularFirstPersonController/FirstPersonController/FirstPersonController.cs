@@ -40,6 +40,10 @@ public class FirstPersonController : MonoBehaviour
     private Image crosshairObject;
     private MenuSettings menuSettings;
 
+    [Header("Sprint image")]
+    public Vector2 initSprintResolution;
+    public Vector2 finalSprintResolution;
+
     #region Camera Zoom Variables
 
     public bool enableZoom = true;
@@ -174,26 +178,26 @@ public class FirstPersonController : MonoBehaviour
 
         #region Sprint Bar
 
-        sprintBarCG = GetComponentInChildren<CanvasGroup>();
+        //sprintBarCG = GetComponentInChildren<CanvasGroup>();
 
         if(useSprintBar)
         {
-            sprintBarBG.gameObject.SetActive(true);
-            sprintBar.gameObject.SetActive(true);
+            //sprintBarBG.gameObject.SetActive(true);
+            //sprintBar.gameObject.SetActive(true);
 
-            float screenWidth = Screen.width;
-            float screenHeight = Screen.height;
+            //float screenWidth = Screen.width;
+            //float screenHeight = Screen.height;
 
-            sprintBarWidth = screenWidth * sprintBarWidthPercent;
-            sprintBarHeight = screenHeight * sprintBarHeightPercent;
+            //sprintBarWidth = screenWidth * sprintBarWidthPercent;
+            //sprintBarHeight = screenHeight * sprintBarHeightPercent;
 
-            sprintBarBG.rectTransform.sizeDelta = new Vector3(sprintBarWidth, sprintBarHeight, 0f);
-            sprintBar.rectTransform.sizeDelta = new Vector3(sprintBarWidth - 2, sprintBarHeight - 2, 0f);
+            //sprintBarBG.rectTransform.sizeDelta = new Vector3(sprintBarWidth, sprintBarHeight, 0f);
+            //sprintBar.rectTransform.sizeDelta = new Vector3(sprintBarWidth - 2, sprintBarHeight - 2, 0f);
 
             if(hideBarWhenFull)
             {
-                if(sprintBarCG != null)
-                    sprintBarCG.alpha = 0;
+                //if(sprintBarCG != null)
+                    //sprintBarCG.alpha = 0;
             }
         }
         else
@@ -207,6 +211,9 @@ public class FirstPersonController : MonoBehaviour
         mouseSensitivity = menuSettings.mouseSensitivity;
         // ESCONDER EL MENU DE OPCIONES
         menuSettings.gameObject.SetActive(false);
+
+        initSprintResolution = new Vector2(2040, 1200);
+        finalSprintResolution = new Vector2(1920, 1080);
     }
 
     float camRotation;
@@ -338,8 +345,8 @@ public class FirstPersonController : MonoBehaviour
             // Handles sprintBar 
             if(useSprintBar && !unlimitedSprint)
             {
-                float sprintRemainingPercent = sprintRemaining / sprintDuration;
-                sprintBar.transform.localScale = new Vector3(sprintRemainingPercent, 1f, 1f);
+                //float sprintRemainingPercent = sprintRemaining / sprintDuration;
+                //sprintBar.transform.localScale = new Vector3(Mathf.Lerp(initSprintResolution.x, finalSprintResolution.x, 1f), Mathf.Lerp(initSprintResolution.y, finalSprintResolution.y, 1f), 1f);
             }
         }
 
@@ -431,7 +438,7 @@ public class FirstPersonController : MonoBehaviour
 
                     if (hideBarWhenFull && !unlimitedSprint)
                     {
-                        sprintBarCG.alpha += 5 * Time.deltaTime;
+                        //sprintBarCG.alpha += 5 * Time.deltaTime;
                     }
                 }
 
@@ -444,8 +451,8 @@ public class FirstPersonController : MonoBehaviour
 
                 if (hideBarWhenFull && sprintRemaining == sprintDuration)
                 {
-                    if(sprintBarCG != null)
-                        sprintBarCG.alpha -= 3 * Time.deltaTime;
+                    //if(sprintBarCG != null)
+                        //sprintBarCG.alpha -= 3 * Time.deltaTime;
                 }
 
                 targetVelocity = transform.TransformDirection(targetVelocity) * walkSpeed;
