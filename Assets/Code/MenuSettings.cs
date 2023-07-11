@@ -27,6 +27,7 @@ public class MenuSettings : MonoBehaviour
     public Slider sensSlider;
     public void SetVolume(float volume)
     {
+        PlayerPrefs.SetFloat("Volume", volume);
         audioMixer.SetFloat("Volume", volume);
         savedSettings.saveVolumeValue = volume;
     }
@@ -95,6 +96,10 @@ public class MenuSettings : MonoBehaviour
     }
     public void LoadSavedSettings()
     {
+        if (savedSettings.saveVolumeValue != PlayerPrefs.GetFloat("Volume"))
+        {
+            savedSettings.saveVolumeValue = PlayerPrefs.GetFloat("Volume");
+        }
         invertMouse.isOn = savedSettings.isInverted;
         volumeSlider.value = savedSettings.saveVolumeValue;
         sensSlider.value = savedSettings.saveSens;
