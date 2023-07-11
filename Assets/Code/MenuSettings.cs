@@ -11,7 +11,7 @@ public class MenuSettings : MonoBehaviour
     public TMP_Dropdown resolutionDropdown;
 
     private float saveVolumeValue = 0f;
-    private float saveSens = 2f;
+    private float saveSens = 2.5f;
 
     public float mouseSensitivity = 2f;
     private bool isInverted = false;
